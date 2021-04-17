@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .container-fluid{
   text-align: center;
 }
@@ -10,6 +13,7 @@ small{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 96vw;
 }
 #banner{
   height: 105vh;
@@ -18,9 +22,6 @@ small{
   background-size: cover;
   background-position:80% 50%;
   color: white;
-  
-}
-#banner :nth-child(5){
   
 }
 #about{
@@ -57,3 +58,83 @@ small{
   width: 100%;
 }
 /*Styling portfolio*/
+#project1, #project2, #project3, #project4,
+ #project5, #project6, #project7, #project8{
+  width: 200px;
+  height: 150px;
+  background-size: cover;
+  margin-right: 1%;
+  margin-top: 2%;
+ }
+ #projectsA, #projectsB{
+   width: 96vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+#project1{
+  background-image: url('../images/portfolio/work1.jpg');
+}
+#project2{
+  background-image: url('../images/portfolio/work2.jpg');
+}
+#project3{
+  background-image: url('../images/portfolio/work3.jpg');
+}
+#project4{
+  background-image: url('../images/portfolio/work4.jpg');
+}
+#project5{
+  background-image: url('../images/portfolio/work5.jpg');
+}
+#project6{
+  background-image: url('../images/portfolio/work6.jpg');
+}
+#project7{
+  background-image: url('../images/portfolio/work7.jpg');
+}
+#project8{
+  background-image: url('../images/portfolio/work8.jpg');
+}
+/*styling the contact us section*/
+#contact{
+  background-image: url('../images/backgrounds/c_image.jpg');
+  width: 90vw;
+  height: 70vh;
+  background-size: cover;
+  color: white;
+  margin: 2%;
+}
+#userName, #userEmail, #message{
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+::placeholder{
+  color: white;
+}
+input{
+  border-color:white;
+  width: 30%;
+  height: 30px;
+  margin-top: 1%;
+}
+#message{
+  width: 60%;
+  height: 30vh;
+  text-align: left;
+  margin-top: 2%;
+}
+/* styling social section */
+#social{
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 96vw;
+}
+#social img{
+  margin: 0 1% 1% 1%;
+  width: 8%;
+}
