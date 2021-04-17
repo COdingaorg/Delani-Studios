@@ -13,4 +13,23 @@ $(document).ready(function(){
       $('#design').child().last().remove();
     })
   })
+  $('#development').click(function(){
+    $('#development').hide();
+    $('#developBtn').prepend('<p id="developStatement">'+development+'</p>');
+    $('#developStatement').click(function(){
+      $('#developStatement').hide()
+      $('#development').show();
+      $('#development').child().last().remove();
+    })
+  })
+  $('#management').click(function(){
+    $('#management').hide();
+    $('#manageBtn').prepend('<p id="manageStatement">'+prodMngmt+'</p>');
+    $('#manageStatement').click(function(){
+      $('#manageStatement').hide()
+      $('#management').show();
+      $('#management').child().last().remove();
+    })
+  })
+
 })
