@@ -41,3 +41,19 @@ small{
   bottom: -25%;
 }
 /*Styling for the what we do section*/
+#weDo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  margin-top: 1.5%;
+  font-size: 900;
+  width: 85%;
+}
+#icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+/*Styling portfolio*/
