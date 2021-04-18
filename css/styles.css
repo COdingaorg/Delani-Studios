@@ -156,7 +156,7 @@ h1{
 /*styling for hidden p class projName*/
 .projName{
   display: none;
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(255, 255, 255, 1);
   box-sizing: border-box;
   margin-top: 30%;
   height: 60%;
