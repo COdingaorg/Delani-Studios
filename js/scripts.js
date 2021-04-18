@@ -38,8 +38,17 @@ $(document).ready(function(){
           function(){$('#'+projHover+' p').fadeIn()},
           function(){$('#'+projHover+' p').fadeOut()})
       })
-  $('#submitbtn').click(
-    function(){$('#Popup').show()})
-  $('#cancel').click(
-    function(){$('#Popup').hide()})
+  $('#submitbtn').click(//gathering input from communication form
+    function(){
+      var userName = $('#userName').val();
+      var userEmail = $('#userEmail').val();
+      var userMessage = $('#message').val();
+
+      $('#popuserName ').prepend(userName);
+      $('#popuserEmail').prepend(userEmail);
+      $('#Popup').show()})//showing pop up
+  $('#cancel').click(//cancel button, closes pop up and erases contact form
+    function(){
+      $('#Popup').hide();
+      $('form')[0].reset()})
 })
