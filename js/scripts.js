@@ -38,5 +38,7 @@ $(document).ready(function(){
           function(){$('#'+projHover+' p').fadeIn()},
           function(){$('#'+projHover+' p').fadeOut()})
       })
-
+  $('#submitbtn').click(
+    function(){$('#Popup').show()}
+  )
 })

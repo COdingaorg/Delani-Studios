@@ -188,3 +188,10 @@ h1{
   color: white;
   background-color: saddlebrown;
 }
+#cancel{
+  font-size: xx-large;
+  border: 1px solid white;
+  width: 15%;
+  float: left;
+  margin :1% -5% 0 1%;
+}
