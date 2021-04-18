@@ -39,6 +39,7 @@ $(document).ready(function(){
           function(){$('#'+projHover+' p').fadeOut()})
       })
   $('#submitbtn').click(
-    function(){$('#Popup').show()}
-  )
+    function(){$('#Popup').show()})
+  $('#cancel').click(
+    function(){$('#Popup').hide()})
 })
