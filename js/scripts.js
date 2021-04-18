@@ -31,5 +31,12 @@ $(document).ready(function(){
       $('#management').child().last().remove();
     })
   })
+//Hover on prtfolio images
+  var projHovers = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6', 'project7', 'project8']
+      projHovers.forEach(function(projHover){
+        $('#'+projHover).hover(
+          function(){$('#'+projHover+' p').fadeIn()},
+          function(){$('#'+projHover+' p').fadeOut()})
+      })
 
 })
