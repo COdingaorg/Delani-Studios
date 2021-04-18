@@ -4,31 +4,45 @@ var development = 'All engineers are fluent in the latest enterprise, mobile and
 var prodMngmt = 'Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve.';
 //user Inteface Logic
 $(document).ready(function(){
+  //for further development, using for each function to loop through statement and process
+  // var clkicons = ['design', 'development', 'management']
+  //   clkicons.forEach(function(clkicon){
+  //     $('#'+clkicon).click(function(){
+  //       $('#'+clkicon).hide();
+
+  //       $('#'+clkicon+'Btn').append('<p id=statement>'+designProcess+'</p>')
+  //       $('#statement').click(function(){
+  //         $('#'+clkicon).show();
+  //         $('#statement').hide();
+  //         $('#statement').remove();
+  //       })
+  //     })
+  //   })
   $('#design').click(function(){
     $('#design').hide();
-    $('#designBtn').prepend('<p id="designStatement">'+designProcess+'</p>');
+    $('#designBtn').append('<p id="designStatement">'+designProcess+'</p>');
     $('#designStatement').click(function(){
       $('#designStatement').hide()
       $('#design').show();
-      $('#design').child().last().remove();
+      $('#designStatement').remove();
     })
   })
   $('#development').click(function(){
     $('#development').hide();
-    $('#developBtn').prepend('<p id="developStatement">'+development+'</p>');
+    $('#developmentBtn').append('<p id="developStatement">'+development+'</p>');
     $('#developStatement').click(function(){
       $('#developStatement').hide()
       $('#development').show();
-      $('#development').child().last().remove();
+      $('#developStatement').remove();
     })
   })
   $('#management').click(function(){
     $('#management').hide();
-    $('#manageBtn').prepend('<p id="manageStatement">'+prodMngmt+'</p>');
+    $('#managementBtn').append('<p id="manageStatement">'+prodMngmt+'</p>');
     $('#manageStatement').click(function(){
       $('#manageStatement').hide()
       $('#management').show();
-      $('#management').child().last().remove();
+      $('#manageStatement').remove();
     })
   })
 //Hover on prtfolio images
