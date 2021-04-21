@@ -43,6 +43,7 @@ small{
 }
 /*Styling for the what we do section*/
 #weDo{
+  width: 96vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,7 +55,7 @@ small{
 #icons{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   cursor:alias;
 }
