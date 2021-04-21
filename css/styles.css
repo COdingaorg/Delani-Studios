@@ -43,20 +43,11 @@ small{
 }
 /*Styling for the what we do section*/
 #weDo{
-  width: 96vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
+  width: 90vw;
   margin-top: 1.5%;
   font-size: 900;
-  width: 85%;
 }
-#icons{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+#icons img{
   cursor:alias;
 }
 /*Styling portfolio*/
